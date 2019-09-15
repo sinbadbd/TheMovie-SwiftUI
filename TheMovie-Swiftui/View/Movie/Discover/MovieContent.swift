@@ -9,9 +9,10 @@
 import SwiftUI
 
 struct MovieContent: View {
+    let movie : Movie
     var body: some View {
         VStack(alignment: .leading) {
-            Image("6")
+            Image(movie.image)
                 .resizable()
                 .cornerRadius(8)
                 .scaledToFill()
@@ -19,7 +20,7 @@ struct MovieContent: View {
                 //.frame(width: 320)
                 //.background(Color.green)
                 
-            Text("Avenger: The End Game")
+            Text(movie.name)
                 .font(.system(size: 16))
                 .lineLimit(3)
         }
@@ -32,6 +33,6 @@ struct MovieContent: View {
 
 struct MovieContent_Previews: PreviewProvider {
     static var previews: some View {
-        MovieContent()
+        MovieContent(movie: movies[0])
     }
 }

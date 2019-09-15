@@ -13,6 +13,11 @@ struct Movie : Hashable, Identifiable{
     let name : String
     let image: String
 }
+let movies: [Movie] = [
+    Movie(name: "The Lion King (2019)", image: "1"),
+    Movie(name: "Aladdin (2019)", image: "2"),
+    Movie(name: "The Avengers : End game (2019)", image: "3")
+]
 
 struct DiscoverMovieArray {
     var discover : [Movie] = {

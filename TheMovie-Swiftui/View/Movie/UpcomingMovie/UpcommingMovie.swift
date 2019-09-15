@@ -31,9 +31,13 @@ struct UpcommingMovie: View {
             
             ScrollView (.horizontal) {
                 HStack{
-                    ForEach(0..<10){_ in
-                        MovieList()
+//                    ForEach(0..<10){_ in
+//                        MovieList()
+//                    }
+                    ForEach(movies){movie in
+                        MovieList(movie: movie)
                     }
+                    
                 }
             }
         }

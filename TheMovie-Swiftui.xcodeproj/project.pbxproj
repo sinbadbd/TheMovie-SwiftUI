@@ -25,6 +25,7 @@
 		1DB60FCD232E45CC00F57983 /* TopRatedMovie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB60FCC232E45CC00F57983 /* TopRatedMovie.swift */; };
 		1DB60FCF232E45D800F57983 /* NowPlayingMovie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB60FCE232E45D800F57983 /* NowPlayingMovie.swift */; };
 		1DB60FD1232E45E900F57983 /* MovieList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB60FD0232E45E900F57983 /* MovieList.swift */; };
+		1DD46CED232E4C640099C83B /* MovieDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD46CEC232E4C640099C83B /* MovieDetailsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		1DB60FCC232E45CC00F57983 /* TopRatedMovie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopRatedMovie.swift; sourceTree = "<group>"; };
 		1DB60FCE232E45D800F57983 /* NowPlayingMovie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NowPlayingMovie.swift; sourceTree = "<group>"; };
 		1DB60FD0232E45E900F57983 /* MovieList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieList.swift; sourceTree = "<group>"; };
+		1DD46CEC232E4C640099C83B /* MovieDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +140,7 @@
 				1DB60FB2232E2E2E00F57983 /* Movie */,
 				1DB60FB3232E2E3300F57983 /* Tv */,
 				1DB60FBA232E2EB200F57983 /* SearchMovie.swift */,
+				1DD46CEC232E4C640099C83B /* MovieDetailsView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -264,6 +267,7 @@
 			files = (
 				1DB60FCF232E45D800F57983 /* NowPlayingMovie.swift in Sources */,
 				1DB60FBD232E2EC100F57983 /* PrfileView.swift in Sources */,
+				1DD46CED232E4C640099C83B /* MovieDetailsView.swift in Sources */,
 				1DB60FB1232E2A9D00F57983 /* MainTab.swift in Sources */,
 				1DB60FD1232E45E900F57983 /* MovieList.swift in Sources */,
 				1DB60F9C232E2A5F00F57983 /* AppDelegate.swift in Sources */,

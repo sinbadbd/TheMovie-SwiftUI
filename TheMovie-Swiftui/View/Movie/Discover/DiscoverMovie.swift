@@ -9,10 +9,12 @@
 import SwiftUI
 
 struct DiscoverMovie: View {
+    
+
     var body: some View {
         VStack(alignment: .leading){
             HStack{
-                Text("Discover Movie")
+                Text("Upcomming Movie")
                     .font(.system(size: 24))
                 
                 Spacer()
@@ -31,8 +33,8 @@ struct DiscoverMovie: View {
             
             ScrollView (.horizontal) {
                 HStack{
-                    ForEach(0..<10){_ in
-                        MovieContent()
+                    ForEach(movies){movie in
+                        MovieContent(movie: movie)
                     }
                 }
                 
