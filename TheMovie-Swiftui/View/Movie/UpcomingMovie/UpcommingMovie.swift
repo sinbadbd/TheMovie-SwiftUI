@@ -11,8 +11,23 @@ import SwiftUI
 struct UpcommingMovie: View {
     var body: some View {
         VStack(alignment: .leading){
-            Text("Upcomming Movie")
-                .font(.system(size: 24))
+            HStack{
+                Text("Upcomming Movie")
+                    .font(.system(size: 24))
+                
+                Spacer()
+                Button(action: {
+                    print("hi")
+                }) {
+                    Text("View All")
+                        .fontWeight(.bold)
+                        .font(.system(size: 14))
+                        .foregroundColor(.black)
+                        .padding(.init(top: 5, leading: 15, bottom: 5, trailing: 15))
+                        .border(Color.gray, width: 1)
+                        .cornerRadius(4)
+                }
+            }
             
             ScrollView (.horizontal) {
                 HStack{
@@ -20,7 +35,6 @@ struct UpcommingMovie: View {
                         MovieList()
                     }
                 }
-                
             }
         }
     }
