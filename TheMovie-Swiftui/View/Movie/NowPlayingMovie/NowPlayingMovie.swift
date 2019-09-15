@@ -9,6 +9,8 @@
 import SwiftUI
 
 struct NowPlayingMovie: View {
+    // let movie : Movie?
+    
     var body: some View {
         VStack(alignment: .leading){
             HStack{
@@ -29,16 +31,12 @@ struct NowPlayingMovie: View {
                 }
             }
             
-            ScrollView (.horizontal) {
+            ScrollView (.horizontal, showsIndicators: false) {
                 HStack{
-//                    ForEach(0..<10){_ in
-//                        MovieList()
-//                    }
                     ForEach(movies){movie in
-                        MovieList(movie: movie)
+                            MovieList(movie: movie)
                     }
                 }
-                
             }
         }
     }

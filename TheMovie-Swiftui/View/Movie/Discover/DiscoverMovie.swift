@@ -14,7 +14,7 @@ struct DiscoverMovie: View {
     var body: some View {
         VStack(alignment: .leading){
             HStack{
-                Text("Upcomming Movie")
+                Text("Discover Movie")
                     .font(.system(size: 24))
                 
                 Spacer()
@@ -31,7 +31,7 @@ struct DiscoverMovie: View {
                 }
             }
             
-            ScrollView (.horizontal) {
+            ScrollView (.horizontal, showsIndicators: false) {
                 HStack{
                     ForEach(movies){movie in
                         MovieContent(movie: movie)

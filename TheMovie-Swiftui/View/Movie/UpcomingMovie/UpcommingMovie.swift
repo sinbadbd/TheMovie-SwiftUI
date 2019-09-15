@@ -29,7 +29,7 @@ struct UpcommingMovie: View {
                 }
             }
             
-            ScrollView (.horizontal) {
+            ScrollView (.horizontal, showsIndicators: false) {
                 HStack{
 //                    ForEach(0..<10){_ in
 //                        MovieList()
