@@ -21,6 +21,10 @@
 		1DB60FC0232E2F1A00F57983 /* DiscoverMovie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB60FBF232E2F1A00F57983 /* DiscoverMovie.swift */; };
 		1DB60FC3232E30C000F57983 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB60FC2232E30C000F57983 /* Movie.swift */; };
 		1DB60FC6232E37FD00F57983 /* MovieContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB60FC5232E37FD00F57983 /* MovieContent.swift */; };
+		1DB60FCB232E45BE00F57983 /* UpcommingMovie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB60FCA232E45BE00F57983 /* UpcommingMovie.swift */; };
+		1DB60FCD232E45CC00F57983 /* TopRatedMovie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB60FCC232E45CC00F57983 /* TopRatedMovie.swift */; };
+		1DB60FCF232E45D800F57983 /* NowPlayingMovie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB60FCE232E45D800F57983 /* NowPlayingMovie.swift */; };
+		1DB60FD1232E45E900F57983 /* MovieList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB60FD0232E45E900F57983 /* MovieList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +44,10 @@
 		1DB60FBF232E2F1A00F57983 /* DiscoverMovie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverMovie.swift; sourceTree = "<group>"; };
 		1DB60FC2232E30C000F57983 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		1DB60FC5232E37FD00F57983 /* MovieContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieContent.swift; sourceTree = "<group>"; };
+		1DB60FCA232E45BE00F57983 /* UpcommingMovie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcommingMovie.swift; sourceTree = "<group>"; };
+		1DB60FCC232E45CC00F57983 /* TopRatedMovie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopRatedMovie.swift; sourceTree = "<group>"; };
+		1DB60FCE232E45D800F57983 /* NowPlayingMovie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NowPlayingMovie.swift; sourceTree = "<group>"; };
+		1DB60FD0232E45E900F57983 /* MovieList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +118,7 @@
 				1DB60FC7232E44B800F57983 /* NowPlayingMovie */,
 				1DB60FC4232E37E100F57983 /* Discover */,
 				1DB60FB6232E2E6100F57983 /* MovieAll.swift */,
+				1DB60FD0232E45E900F57983 /* MovieList.swift */,
 			);
 			path = Movie;
 			sourceTree = "<group>";
@@ -161,6 +170,7 @@
 		1DB60FC7232E44B800F57983 /* NowPlayingMovie */ = {
 			isa = PBXGroup;
 			children = (
+				1DB60FCE232E45D800F57983 /* NowPlayingMovie.swift */,
 			);
 			path = NowPlayingMovie;
 			sourceTree = "<group>";
@@ -168,6 +178,7 @@
 		1DB60FC8232E44C600F57983 /* TopRatedMovie */ = {
 			isa = PBXGroup;
 			children = (
+				1DB60FCC232E45CC00F57983 /* TopRatedMovie.swift */,
 			);
 			path = TopRatedMovie;
 			sourceTree = "<group>";
@@ -175,6 +186,7 @@
 		1DB60FC9232E44E500F57983 /* UpcomingMovie */ = {
 			isa = PBXGroup;
 			children = (
+				1DB60FCA232E45BE00F57983 /* UpcommingMovie.swift */,
 			);
 			path = UpcomingMovie;
 			sourceTree = "<group>";
@@ -250,8 +262,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1DB60FCF232E45D800F57983 /* NowPlayingMovie.swift in Sources */,
 				1DB60FBD232E2EC100F57983 /* PrfileView.swift in Sources */,
 				1DB60FB1232E2A9D00F57983 /* MainTab.swift in Sources */,
+				1DB60FD1232E45E900F57983 /* MovieList.swift in Sources */,
 				1DB60F9C232E2A5F00F57983 /* AppDelegate.swift in Sources */,
 				1DB60F9E232E2A5F00F57983 /* SceneDelegate.swift in Sources */,
 				1DB60FC3232E30C000F57983 /* Movie.swift in Sources */,
@@ -260,6 +274,8 @@
 				1DB60FC6232E37FD00F57983 /* MovieContent.swift in Sources */,
 				1DB60FBB232E2EB200F57983 /* SearchMovie.swift in Sources */,
 				1DB60FB7232E2E6100F57983 /* MovieAll.swift in Sources */,
+				1DB60FCD232E45CC00F57983 /* TopRatedMovie.swift in Sources */,
+				1DB60FCB232E45BE00F57983 /* UpcommingMovie.swift in Sources */,
 				1DB60FB9232E2E8700F57983 /* TvSection.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

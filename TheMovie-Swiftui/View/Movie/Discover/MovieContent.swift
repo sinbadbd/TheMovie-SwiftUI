@@ -19,7 +19,7 @@ struct MovieContent: View {
                 //.frame(width: 320)
                 //.background(Color.green)
                 
-            Text("AvegerAvegerAvegerAvegerAvegerAvegerAvegerAvegerAveger")
+            Text("Avenger: The End Game")
                 .font(.system(size: 16))
                 .lineLimit(3)
         }

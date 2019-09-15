@@ -13,13 +13,9 @@ struct MovieAll: View {
         NavigationView{
             List {
                 DiscoverMovie()
-                
-                
-//                DiscoverMovie()
-//                DiscoverMovie()
-//                DiscoverMovie()
-//                DiscoverMovie()
-//                DiscoverMovie()
+                UpcommingMovie()
+                NowPlayingMovie()
+                TopRatedMovie()
             }
             .listRowInsets(EdgeInsets())
             .navigationBarTitle("Movie")
