@@ -12,15 +12,16 @@ struct MovieContent: View {
     let movie : Movie
     var body: some View {
         VStack(alignment: .leading) {
-            Image(movie.image)
+            Image(movie.image).renderingMode(.original)
                 .resizable()
                 .cornerRadius(8)
                 .scaledToFill()
                 .aspectRatio(contentMode: .fill)
-                .frame(height: 240)
+                .frame(height: 150)
                 //.background(Color.green)
-                
+            Spacer()
             Text(movie.name)
+                .foregroundColor(.primary)
                 .font(.system(size: 16))
                 .lineLimit(3)
         }

@@ -38,7 +38,6 @@ struct DiscoverMovie: View {
                             NavigationLink(destination: MovieDetailsView(movie: movie)){
                                 MovieContent(movie: movie)
                             }
-                            //print("hi")
                         }
                     }
                 }

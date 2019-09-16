@@ -20,7 +20,7 @@ struct MovieAll: View {
                         TopRatedMovie()
                     }
                 }
-            }
+                }.padding()
             .listRowInsets(EdgeInsets())
             .navigationBarTitle(Text("Movie"))
         }

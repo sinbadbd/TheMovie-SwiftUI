@@ -26,6 +26,7 @@
 		1DB60FCF232E45D800F57983 /* NowPlayingMovie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB60FCE232E45D800F57983 /* NowPlayingMovie.swift */; };
 		1DB60FD1232E45E900F57983 /* MovieList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB60FD0232E45E900F57983 /* MovieList.swift */; };
 		1DD46CED232E4C640099C83B /* MovieDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD46CEC232E4C640099C83B /* MovieDetailsView.swift */; };
+		1DD46CEF232F9AD80099C83B /* MovieCast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD46CEE232F9AD70099C83B /* MovieCast.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,7 @@
 		1DB60FCE232E45D800F57983 /* NowPlayingMovie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NowPlayingMovie.swift; sourceTree = "<group>"; };
 		1DB60FD0232E45E900F57983 /* MovieList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieList.swift; sourceTree = "<group>"; };
 		1DD46CEC232E4C640099C83B /* MovieDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsView.swift; sourceTree = "<group>"; };
+		1DD46CEE232F9AD70099C83B /* MovieCast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCast.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +123,7 @@
 				1DB60FC4232E37E100F57983 /* Discover */,
 				1DB60FB6232E2E6100F57983 /* MovieAll.swift */,
 				1DB60FD0232E45E900F57983 /* MovieList.swift */,
+				1DD46CEE232F9AD70099C83B /* MovieCast.swift */,
 			);
 			path = Movie;
 			sourceTree = "<group>";
@@ -276,6 +279,7 @@
 				1DB60FA0232E2A5F00F57983 /* ContentView.swift in Sources */,
 				1DB60FC0232E2F1A00F57983 /* DiscoverMovie.swift in Sources */,
 				1DB60FC6232E37FD00F57983 /* MovieContent.swift in Sources */,
+				1DD46CEF232F9AD80099C83B /* MovieCast.swift in Sources */,
 				1DB60FBB232E2EB200F57983 /* SearchMovie.swift in Sources */,
 				1DB60FB7232E2E6100F57983 /* MovieAll.swift in Sources */,
 				1DB60FCD232E45CC00F57983 /* TopRatedMovie.swift in Sources */,
