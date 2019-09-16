@@ -11,18 +11,22 @@ import SwiftUI
 struct MovieAll: View {
     var body: some View {
         NavigationView{
-            List {
-                DiscoverMovie()
-                UpcommingMovie()
-                NowPlayingMovie()
-                TopRatedMovie()
+            ScrollView (.vertical, showsIndicators: false){
+                VStack{
+                    Group{
+                        DiscoverMovie()
+                        UpcommingMovie()
+                        NowPlayingMovie()
+                        TopRatedMovie()
+                    }
+                }
             }
             .listRowInsets(EdgeInsets())
-            .navigationBarTitle("Movie")
+            .navigationBarTitle(Text("Movie"))
         }
-        
     }
 }
+
 
 struct MovieAll_Previews: PreviewProvider {
     static var previews: some View {

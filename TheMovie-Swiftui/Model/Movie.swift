@@ -16,6 +16,12 @@ struct Movie : Hashable, Identifiable{
 let movies: [Movie] = [
     Movie(name: "The Lion King (2019)", image: "1"),
     Movie(name: "Aladdin (2019)", image: "2"),
+    Movie(name: "The Avengers : End game (2019)", image: "3"),
+    Movie(name: "The Lion King (2019)", image: "1"),
+    Movie(name: "Aladdin (2019)", image: "6"),
+    Movie(name: "The Avengers : End game (2019)", image: "3"),
+    Movie(name: "The Lion King (2019)", image: "4"),
+    Movie(name: "Aladdin (2019)", image: "5"),
     Movie(name: "The Avengers : End game (2019)", image: "3")
 ]
 
@@ -23,10 +29,10 @@ struct DiscoverMovieArray {
     var discover : [Movie] = {
         return [
             Movie(name: "Avenger: End Game", image: "6"),
+            Movie(name: "Avenger: End Game", image: "1"),
+            Movie(name: "Avenger: End Game", image: "3"),
             Movie(name: "Avenger: End Game", image: "6"),
-            Movie(name: "Avenger: End Game", image: "6"),
-            Movie(name: "Avenger: End Game", image: "6"),
-            Movie(name: "Avenger: End Game", image: "6")
+            Movie(name: "Avenger: End Game", image: "4")
         ]
     }()
 }

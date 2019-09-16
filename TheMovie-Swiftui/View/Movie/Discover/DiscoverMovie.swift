@@ -10,13 +10,13 @@ import SwiftUI
 
 struct DiscoverMovie: View {
     
-
+    
     var body: some View {
         VStack(alignment: .leading){
             HStack{
                 Text("Discover Movie")
                     .font(.system(size: 24))
-                
+
                 Spacer()
                 Button(action: {
                     print("hi")
@@ -30,15 +30,20 @@ struct DiscoverMovie: View {
                         .cornerRadius(4)
                 }
             }
-            
-            ScrollView (.horizontal, showsIndicators: false) {
-                HStack{
-                    ForEach(movies){movie in
-                        MovieContent(movie: movie)
+            // NavigationView{
+            VStack{
+                ScrollView (.horizontal, showsIndicators: false) {
+                    HStack{
+                        ForEach(movies, id: \.self){movie in
+                            NavigationLink(destination: MovieDetailsView(movie: movie)){
+                                MovieContent(movie: movie)
+                            }
+                            //print("hi")
+                        }
                     }
                 }
-                
             }
+            // }.frame( height: 340)
         }
     }
 }

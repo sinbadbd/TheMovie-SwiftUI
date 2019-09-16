@@ -13,6 +13,7 @@ struct MovieList: View {
     var body: some View {
         VStack{
             Image(movie.image)
+                .renderingMode(.original)
                 .resizable()
                 .cornerRadius(8)
                 .scaledToFill()

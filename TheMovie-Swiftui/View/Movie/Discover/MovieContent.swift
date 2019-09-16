@@ -17,7 +17,7 @@ struct MovieContent: View {
                 .cornerRadius(8)
                 .scaledToFill()
                 .aspectRatio(contentMode: .fill)
-                //.frame(width: 320)
+                .frame(height: 240)
                 //.background(Color.green)
                 
             Text(movie.name)
