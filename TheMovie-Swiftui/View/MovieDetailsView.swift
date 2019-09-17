@@ -69,6 +69,7 @@ struct MovieDetailsView: View {
                 MovieCast()
                     .padding()
                     .offset(x: 0, y: -260)
+                    //.frame( height: 200).background(Color.red)
             }
         }
     }

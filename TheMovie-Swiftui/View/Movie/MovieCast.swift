@@ -19,28 +19,31 @@ struct MovieCast: View {
             ScrollView(.horizontal, showsIndicators: false){
                 HStack{
                     ForEach(0..<10){_ in
-                        VStack(alignment: .center, spacing: 10){
-                            Image("1")
-                                .resizable()
-                                .clipped()
-                                .clipShape(Circle())
-                                .shadow(radius: 4)
-                                .overlay(Circle().stroke(Color.gray, lineWidth: 2))
-                                .frame(width: 90, height: 90, alignment: .leading)
-                            
-                            Text("Avenger Endgame")
-                        }.frame(width: 100)
+                        NavigationLink(destination: PrfileView()){
+                            VStack(alignment: .center, spacing: 10){
+                                Image("1").renderingMode(.original)
+                                    .resizable()
+                                    .clipped()
+                                    .clipShape(Circle())
+                                    .shadow(radius: 4)
+                                    .overlay(Circle().stroke(Color.gray, lineWidth: 2))
+                                    .frame(width: 90, height: 90, alignment: .leading)
+                                
+                                Text("Avenger Endgame")
+                                    .foregroundColor(.primary)
+                            }.frame(width: 100)
                     }
                 }
             }
-            
         }
+        
     }
-    
-    struct MovieCast_Previews: PreviewProvider {
-        static var previews: some View {
-            MovieCast()
-        }
+}
+
+struct MovieCast_Previews: PreviewProvider {
+    static var previews: some View {
+        MovieCast()
     }
-    
+}
+
 }
