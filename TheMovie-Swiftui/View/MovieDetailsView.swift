@@ -27,14 +27,25 @@ struct MovieDetailsView: View {
                     .listRowInsets(EdgeInsets())
                     .offset(x: 0, y: -100)
                 
+               // ZStack{
+//                    Image("play3")
+//                       .resizable()
+//                       .scaledToFill()
+//                       .frame(width:40,height: 40)
+//                       .aspectRatio(contentMode: .fill)
+//                       .clipped().offset(x: 0, y: -150)
+                    
+                       
+                //}
+                
                 Text(movie.name)
                     .font(.system(size: 20))
                     .fontWeight(.bold)
-                    .lineLimit(3)
-                    .foregroundColor(.red)
-                    .offset(x: 0, y: -140)
-                    
-                    .padding(.init(top: 10, leading: 0, bottom: 10, trailing: 0))
+                    .lineLimit(4)
+                    .foregroundColor(.white)
+                    .offset(x: 75, y: -180)
+                    .frame(width: 240, height: 50, alignment: .leading)
+                    .padding(.init(top: 10, leading: 0, bottom: 10, trailing: 10))
                 
                 
                 Image(movie.image)
@@ -50,6 +61,7 @@ struct MovieDetailsView: View {
                     .offset(x: 0, y: -240)
                     .onTapGesture {
                         print("hi")
+                        
                 }
                 
                 // MARK: NEED REFACTOR CODE: BUG

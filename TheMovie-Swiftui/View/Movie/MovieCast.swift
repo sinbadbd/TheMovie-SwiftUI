@@ -12,7 +12,7 @@ struct MovieCast: View {
     var body: some View {
         VStack(alignment: .leading){
             
-            Text("Cast")
+            Text("Top Billed Cast")
                 .font(.headline).bold()
                 .font(.system(size: 24))
             
