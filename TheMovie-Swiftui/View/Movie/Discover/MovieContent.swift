@@ -27,6 +27,7 @@ struct MovieContent: View {
         }
         .padding(.init(top: 10, leading: 10, bottom: 10, trailing: 10))
         .frame(width: 320,height: 260)
+        
         //         .background(Color.red)
         
     }

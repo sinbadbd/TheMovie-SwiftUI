@@ -15,6 +15,7 @@ struct MovieList: View {
             Image(movie.image)
                 .renderingMode(.original)
                 .resizable()
+                .clipped()
                 .cornerRadius(8)
                 .scaledToFill()
                 .aspectRatio(contentMode: .fill)

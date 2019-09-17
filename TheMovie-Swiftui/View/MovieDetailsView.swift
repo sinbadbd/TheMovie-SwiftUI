@@ -11,6 +11,10 @@ import SwiftUI
 struct MovieDetailsView: View {
     
     let movie : Movie
+    
+    @State private var isTapped = false
+    @State private var dragPosition = CGSize.zero
+    
     var body: some View {
         ScrollView{
             VStack{
@@ -29,13 +33,10 @@ struct MovieDetailsView: View {
                     .lineLimit(3)
                     .foregroundColor(.red)
                     .offset(x: 0, y: -140)
-                    //.padding(.leading, 50)
-                    //     .padding(.bottom)
-                    //  .offset(x: 0, y: 70)
-                    .frame(minWidth: 300, maxWidth: 300, minHeight: 0, maxHeight: 200)
+                    
+                    .padding(.init(top: 10, leading: 0, bottom: 10, trailing: 0))
                 
                 
-                //  VStack(alignment: .leading, spacing: 10){
                 Image(movie.image)
                     .resizable()
                     .scaledToFill()
@@ -47,22 +48,27 @@ struct MovieDetailsView: View {
                     .background(Color.red)
                     .aspectRatio(CGSize(width:120, height: 180), contentMode: .fit)
                     .offset(x: 0, y: -240)
-                //.offset(x: 0, y: 0)
-                //   }
+                    .onTapGesture {
+                        print("hi")
+                }
                 
-                Text(movie.description)
-                    .font(.system(size: 16))
-                    .foregroundColor(.primary)
-                    .background(Color.red)
-                    .lineLimit(Int.max)
-                    .frame(height: 200)
+                // MARK: NEED REFACTOR CODE: BUG
+                VStack(alignment: .leading){
+                    Text(movie.description)
+                        .font(.system(size: 16))
+                        .multilineTextAlignment(.leading)
+                        .foregroundColor(.primary)
+                        //.background(Color.red)
+                        .lineLimit(Int.max)
+                        .offset(x: 0, y: -270)
+                        .frame( height: 150, alignment: .top)
+                        .padding(.init(top: 50, leading: 20, bottom: 10, trailing: 10))
+                }
+                //.frame( height: 150, alignment: .topLeading).background(Color.green)
+                
+                MovieCast()
                     .padding()
-                    .offset(x: 0, y: -270)
-                
-                
-                //                MovieCast()
-                //                    .padding()
-                //                    .offset(x: 0, y: -70)
+                    .offset(x: 0, y: -260)
             }
         }
     }

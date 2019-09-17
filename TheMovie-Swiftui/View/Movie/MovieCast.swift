@@ -10,20 +10,37 @@ import SwiftUI
 
 struct MovieCast: View {
     var body: some View {
-        // VStack{
-        ScrollView(.horizontal, showsIndicators: false){
-            HStack{
-                ForEach(0..<10){_ in
-                    Text("Avenger Endgame")
+        VStack(alignment: .leading){
+            
+            Text("Cast")
+                .font(.headline).bold()
+                .font(.system(size: 24))
+            
+            ScrollView(.horizontal, showsIndicators: false){
+                HStack{
+                    ForEach(0..<10){_ in
+                        VStack(alignment: .center, spacing: 10){
+                            Image("1")
+                                .resizable()
+                                .clipped()
+                                .clipShape(Circle())
+                                .shadow(radius: 4)
+                                .overlay(Circle().stroke(Color.gray, lineWidth: 2))
+                                .frame(width: 90, height: 90, alignment: .leading)
+                            
+                            Text("Avenger Endgame")
+                        }.frame(width: 100)
+                    }
                 }
             }
+            
         }
-        //}
     }
-}
-
-struct MovieCast_Previews: PreviewProvider {
-    static var previews: some View {
-        MovieCast()
+    
+    struct MovieCast_Previews: PreviewProvider {
+        static var previews: some View {
+            MovieCast()
+        }
     }
+    
 }
